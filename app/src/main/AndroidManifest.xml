@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lenovo.mychessfive">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TwoActivity"
+            android:label="图片界面">
+
+            <!-- filter 为activity属性，可包含 0-N 个<action../> 和 0-N 个<category../> 0-1个<data../> -->
+            <intent-filter>
+                <action android:name="org.crazyit.intent.action.CARAZYIT_ACTION" />
+                <action android:name="helloworld22" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.lenovo.mydevelopment.Multimedia"
+            android:label="多媒体">
+            <intent-filter>
+                <action android:name="multi.media" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+            name:指定该ContentProvider的实现类的类名
+                        exported:指定该ContentProvider是否允许其他应用调用
+        -->
+        <provider
+            android:name=".ConProAct"
+            android:authorities="myprovider.dictprovider"
+            android:exported="true" />
+
+        <service android:name=".MyIntentService">
+            <intent-filter>
+                <action android:name="chess.myservice" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".MusicService">
+            <intent-filter>
+                <action android:name="music.service" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="0">
+                <!--指定该BroadcastReceiver所响应的Intent的Action-->
+                <action android:name="org.MYBROADCAST" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".MyReceiver2">
+            <!--优先级为-1000 到 1000，值越大优先级越高-->
+            <intent-filter android:priority="20">
+                <!--指定该BroadcastReceiver所响应的Intent的Action-->
+                <action android:name="org.MYBROADCAST" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.lenovo.mychessfive.MainActivity"
+    >
+
+    <TextView
+        android:id="@+id/hello_tv"
+        android:text="Hello World a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/share_read_btn"
+            android:text="共享读"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/share_write_btn"
+            android:text="共享写"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/media_scrn_btn"
+            android:text="多媒体"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/boardcast_btn"
+            android:text="广播"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/a_btn"
+            android:text="a"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:id="@+id/pic_btn"
+            android:text="图片"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/start_service_btn"
+            android:text="开启服务"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/stop_service_btn"
+            android:text="关闭服务"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bind_btn"
+            android:text="绑定"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/unbind_btn"
+            android:text="解绑"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/getServiceStatus_btn"
+            android:text="获取服务状态"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/insert2_btn"
+            android:text="增加"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/delete2_btn"
+            android:text="删除"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/update2_btn"
+            android:text="修改"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/check2_btn"
+            android:text="查看"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/insert_btn"
+            android:text="增"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/delete_btn"
+            android:text="删"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/update_btn"
+            android:text="改"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/check_btn"
+            android:text="查"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

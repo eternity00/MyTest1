@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/multi_media"
+    android:orientation="vertical"
+    tools:context="com.example.lenovo.mydevelopment.Multimedia">
+
+    <TextView
+        android:text="音乐播放器"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/audio_start_btn"
+            android:text="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/audio_stop_btn"
+            android:text="stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/audio_pre_btn"
+            android:text="上一曲"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/audio_next_btn"
+            android:text="下一曲"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
